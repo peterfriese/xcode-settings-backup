@@ -7,7 +7,13 @@ XC_USER_DATA="/Users/$USER/Library/Developer/Xcode/UserData"
 echo 'Copying color themes...'
 THEME_DIR="$XC_USER_DATA/FontAndColorThemes/"
 mkdir -p $THEME_DIR
-cp ./Custom.xccolortheme $THEME_DIR
+cp ./*.xccolortheme $THEME_DIR
+
+echo 'Copying key bindings...'
+KEYBINDINGS_DIR="$XC_USER_DATA/KeyBindings/"
+mkdir -p $KEYBINDINGS_DIR
+cp ./*.idekeybindings $KEYBINDINGS_DIR
+
 
 # template
 echo 'Copying header templates...'
